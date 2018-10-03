@@ -1,0 +1,114 @@
+div .header{
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+}
+.content{
+  padding-top: 10%;
+  display:flex;
+  flex-direction: column;
+  flex-grow: 1;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+ul li{
+  float:left;
+}
+
+ul li.right{
+  float:right;
+}
+
+ul li a{
+  display:flex;
+  flex-direction: row;
+  padding-left: 20px;
+  padding-top: 5px;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+  color: #505050;
+  font-family: arial, sans-serif;
+  font-size: 10pt;
+  text-decoration: none;
+}
+
+ul#navbar img{
+  height: 24px;
+  width: 24px;
+}
+
+ul#footbar li a{
+  padding-top: 0px;
+  padding-bottom: 20px;
+  color: #787878;
+}
+
+form.searchbox {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-flow: row wrap;
+  flex-basis: auto;
+  padding: 10px;
+  font-size: 15px;
+  height:20px;
+  width: 600px;
+}
+
+input.textbox:focus{
+  outline-width: 0;
+}
+
+
+form.searchbox input[type=text]{
+  padding-left: 10px;
+  margin: 20px;
+  height:45px;
+  flex: 0 0 100%;
+  font-size: 14pt;
+  box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, .12);
+  border: none;
+}
+form.searchbox input[type=submit]{
+  background-color: #f2f2f2;
+  justify-content: center;
+  font-family: arial, sans-serif;
+  font-size: 10pt;
+  font-weight: bold;
+  color:#747474;
+  margin: 20px 5px;
+  height: 40px;
+  align-items: center;
+  display: inline-flex;
+  width:22%;
+  border-radius: 2px;
+  border:none;
+}
+.googleTIL{
+  padding-top: 20%;
+  text-align: center;
+}
+.footer{
+  margin: 0;
+  width:100%;
+  padding-top: 10px;
+  background-color: #f2f2f2;
+}
